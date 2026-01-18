@@ -1,0 +1,72 @@
+  /* GlucoseRecord.css */
+  .glucose-record {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .record-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .record-value {
+    font-weight: bold;
+    font-size: 1.1rem;
+    min-width: 60px;
+  }
+  
+  .record-type {
+    flex: 1;
+    color: #555;
+  }
+  
+  .record-date {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  
+  .record-notes {
+    color: #666;
+    font-size: 0.9rem;
+    padding-top: 8px;
+    border-top: 1px dashed #eee;
+  }
+  
+  /* Dashboard.css */
+  .dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  
+  .input-section {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+  }
+  
+  .records-section {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+  }

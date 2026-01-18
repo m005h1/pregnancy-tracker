@@ -1,0 +1,277 @@
+/* Base Styles - Inherits from LandingPage.css */
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Hero Section - More Balanced */
+  .about-hero {
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(248, 249, 250, 1) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #4a5568;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Button Group - Perfectly Balanced */
+  .cta-buttons {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cta-buttons .btn {
+    min-width: 180px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* Info Section - Better Spacing */
+  .info-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+  }
+  
+  .info-card h2 {
+    color: #2d3748;
+    margin-bottom: 1.75rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  /* Stats Grid - More Elegant */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.75rem;
+    margin: 3rem 0;
+  }
+  
+  .stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%);
+    color: white;
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+  
+  .stat-label {
+    font-size: 1.05rem;
+    opacity: 0.95;
+    line-height: 1.4;
+  }
+  
+  /* Cards Section - Improved Grid */
+  .cards-section {
+    padding: 1rem 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.25rem;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 14px;
+    padding: 2.25rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.1);
+    border-color: rgba(102, 126, 234, 0.3);
+  }
+  
+  .card-icon {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+    opacity: 0.9;
+  }
+  
+  .feature-card h3 {
+    color: #2d3748;
+    margin-bottom: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .feature-card ul {
+    padding-left: 1.25rem;
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+  
+  .feature-card li {
+    margin-bottom: 0.6rem;
+    position: relative;
+  }
+  
+  .feature-card li::before {
+    content: "•";
+    color: #667eea;
+    position: absolute;
+    left: -1rem;
+    font-weight: bold;
+  }
+  
+  /* Management Section - Cleaner Layout */
+  .management-section {
+    padding: 3rem 2rem 5rem;
+    background: white;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #2d3748;
+    margin-bottom: 3.5rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+  }
+  
+  .management-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .management-card {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 2rem;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .management-card:hover {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .management-card h3 {
+    color: #2d3748;
+    margin-bottom: 1.25rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+  
+  .management-card p {
+    color: #4a5568;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 4rem 1.5rem 3rem;
+    }
+    
+    .about-hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .cta-buttons .btn {
+      width: 100%;
+      max-width: 280px;
+    }
+    
+    .info-section,
+    .cards-section,
+    .management-section {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    
+    .info-card {
+      padding: 1.75rem;
+    }
+    
+    .cards-section,
+    .management-grid {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-hero h1 {
+      font-size: 1.8rem;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .stat-number {
+      font-size: 2.25rem;
+    }
+  }

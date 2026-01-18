@@ -1,0 +1,84 @@
+/* GDMForm.css */
+.diabetes-form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .diabetes-form-container h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .diabetes-form-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .diabetes-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .diabetes-form-container input,
+  .diabetes-form-container select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .diabetes-form-container .submit-btn {
+    background: #4dabf7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .diabetes-form-container .submit-btn:hover {
+    background: #339af0;
+  }
+  
+  .prediction-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .risk-level {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .risk-level.high {
+    color: #ff6b6b;
+  }
+  
+  .risk-level.low {
+    color: #51cf66;
+  }
+  
+  .probability {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .diabetes-form-container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }

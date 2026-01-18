@@ -1,0 +1,10 @@
+.glucose-chart {
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  /* Make chart responsive within container */
+  canvas {
+    max-width: 100%;
+    height: auto !important;
+  }

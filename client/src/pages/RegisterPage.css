@@ -1,0 +1,150 @@
+/* RegisterPage.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .register-form {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .register-form:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form h2 {
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative; /* Added for date icon positioning */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+  }
+  
+  /* Specific styling for date input */
+  .form-group input[type="date"] {
+    padding-right: 2.5rem; /* More padding on right for icon */
+  }
+  
+  /* Date icon styling */
+  .form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23687a9e' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E") no-repeat center;
+    background-size: contain;
+    opacity: 0.7;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  
+  .form-group input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background-color: white;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #667eea;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a67d8;
+    transform: translateY(-2px);
+  }
+  
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  
+  .alert-danger {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    background-color: #fff5f5;
+    color: #e53e3e;
+    border: 1px solid #fed7d7;
+    font-size: 0.95rem;
+  }
+  
+  .register-links {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #718096;
+    font-size: 0.95rem;
+  }
+  
+  .register-links a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .register-links a:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .register-form {
+      padding: 1.75rem;
+    }
+    
+    .register-form h2 {
+      font-size: 1.5rem;
+    }
+  }
